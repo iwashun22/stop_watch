@@ -1,0 +1,107 @@
+*{
+   outline: none;
+}
+
+body{
+   display: flex;
+   height:100vh;
+   width: 100vw;
+   margin: 0;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   background: #000;
+}
+
+.input{
+   width: 400px;
+   height: 130px;
+   margin: 20px auto 20px;
+   background-color: rgb(0, 93, 168);
+   border-radius: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 2px solid rgb(0, 80, 146);
+   box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+               inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+               0 15px 15px rgba(0, 0, 0, 0.3),
+               inset 0 15px 15px rgba(0, 0, 0, 0.3);
+   -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0004);
+}
+
+.each-section input[type="number"]{
+   width: 70px;
+   font-size: 30px;
+   line-height: 40px;
+   border-radius: 20px;
+   outline: none;
+   padding-left: 10px;
+}
+
+.input .each-section{
+   margin: 0 10px 0;
+}
+
+.input .each-section h3{
+   position: relative;
+   font-size: 15px;
+   margin: 15px 0 0;
+   background-color: rgb(0, 247, 255);
+   border: 2px rgb(137, 241, 255) solid;
+   border-radius: 20px;
+   box-shadow: 0 0 10px rgb(0, 247, 255), 0 0 40px rgb(0, 247, 255), 0 0 80px rgb(0, 247, 255);
+}
+
+.timer{
+   text-align: center;
+   margin: 0;
+   transform: translateY(-50%);
+}
+
+.button{
+   width: 80px;
+   font-size: 30px;
+   line-height: 50px;
+   border-radius: 25px;
+   margin: 10px 20px 0px;
+   border: 2px solid;
+   transition: .3s;
+}
+
+.green{
+   background-color: rgb(80, 179, 80);
+   border-color: rgb(32, 32, 32);
+}.green:hover{ 
+   background-color: rgb(70, 255, 70);
+   box-shadow: 0 0 10px rgb(70, 255, 70), 0 0 40px rgb(70, 255, 70), 0 0 80px rgb(70, 255, 70);
+   border-color: rgb(159, 255, 159);
+}
+
+.red{
+   background-color: rgb(179, 80, 80);
+   border-color: rgb(32, 32, 32);
+}.red:hover{ 
+   background-color: rgb(255, 70, 70);
+   box-shadow: 0 0 10px rgb(255, 70, 70), 0 0 40px rgb(255, 70, 70), 0 0 80px rgb(255, 70, 70);
+   border-color: rgb(255, 159, 159);
+}
+
+input#volume-slider{
+   width: 70px;
+}
+
+.volume-setting{
+   display: flex;
+   width: 180px;
+   height: 30px;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+}
+
+.volume-setting h3{
+   color: white;
+   font-weight: 600;
+   margin-right: 10px;
+}

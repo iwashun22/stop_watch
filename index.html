@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Timer</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="timer">
+
+      <button id="start-stop" class="button green">start</button>
+      <button id="reset" class="button red">reset</button>
+
+      <div class="input">
+         <div class="each-section">
+            <input class="select-time" id="hours" type="number" max="60" min="0" value="0" placeholder="0">
+            <h3>Hrs</h3>
+         </div>
+         <div class="each-section">
+            <input class="select-time" id="minutes" type="number" max="59" min="0" value="0" placeholder="0">
+            <h3>Mins</h3>
+         </div>
+         <div class="each-section">
+            <input class="select-time" id="seconds" type="number" max="59" min="0" value="0" placeholder="0">
+            <h3>Secs</h3>
+         </div>
+      </div>
+
+      <div class="volume-setting">
+         <lebel><h3>volume:</h3></lebel><input id="volume-slider" type="range" min="0" max="100" value="30" step="2">
+      </div>
+
+   </div>
+
+   <script src="timer.js"></script>
+</body>
+</html>
